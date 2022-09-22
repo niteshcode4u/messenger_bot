@@ -29,7 +29,7 @@ config :messenger_bot,
     version: "v14.0",
     send_api: "me/messages",
     page_access_token: System.get_env("FB_PAGE_ACCESS_TOKEN")
-  }.
+  },
   coingecko: %{
     base_url: "https://api.coingecko.com/api",
     version: "v3",
