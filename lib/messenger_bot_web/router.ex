@@ -7,5 +7,8 @@ defmodule MessengerBotWeb.Router do
 
   scope "/api", MessengerBotWeb do
     pipe_through :api
+
+    get "/messenger_webhook", MessengerController, :validate_token
+    post "/messenger_webhook", MessengerController, :handle_message
   end
 end
