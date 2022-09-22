@@ -53,6 +53,7 @@ defmodule MessengerBot.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:httpoison, "~> 1.8"},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.14.0", only: [:test]},
       {:mox, "~> 1.0"},
       {:ex_machina, "~> 2.7.0"}
