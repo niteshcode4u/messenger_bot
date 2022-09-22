@@ -1,0 +1,10 @@
+{
+  "skip_files": [
+    "lib/messenger_bot/application.ex",
+    "lib/messenger_bot_web.ex",
+    "lib/messenger_bot_web/endpoint.ex",
+    "lib/messenger_bot_web/telemetry.ex",
+    "lib/messenger_bot_web/views/error_helpers.ex",
+    "test/support/channel_case.ex"
+  ]
+}
