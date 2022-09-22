@@ -24,17 +24,20 @@ config :phoenix, :json_library, Jason
 
 # Configuration for messenger_bot dependents
 config :messenger_bot,
+  facebook_client: MessengerBot.Clients.FacebookClient,
   face_book: %{
     base_url: "https://graph.facebook.com",
     version: "v14.0",
     send_api: "me/messages",
     page_access_token: System.get_env("FB_PAGE_ACCESS_TOKEN")
   },
+  coingecko_client: MessengerBot.Clients.CoingeckoClient,
   coingecko: %{
     base_url: "https://api.coingecko.com/api",
     version: "v3",
     search_api: "search"
-  }
+  },
+  http_adapter: HTTPoison
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

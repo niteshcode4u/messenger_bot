@@ -12,3 +12,7 @@ config :logger, level: :warn
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :messenger_bot, facebook_client: FacebookMock
+config :messenger_bot, coingecko_client: CoingeckoMock
+config :messenger_bot, http_adapter: HttpMock

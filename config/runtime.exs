@@ -19,6 +19,12 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
+  if System.get_env("FB_PAGE_ACCESS_TOKEN") == nil,
+    do:
+      raise("""
+      environment variable FB_PAGE_ACCESS_TOKEN is missing.
+      """)
+
   config :messenger_bot, MessengerBotWeb.Endpoint,
     http: [
       # Enable IPv6 and bind on all interfaces.
