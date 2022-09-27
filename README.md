@@ -16,11 +16,11 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
  2. Need to create a facebook page for which you waant to set up auto response from bot
  3. Set up by subscribing that page from your newly created `appAutoRespBot`
  4. Then at developer facebook page you need to go to messenger settings and generate `FB_PAGE_ACCESS_TOKEN`
- 5. Subscribe to `messeages` & `messaging_postbacks` webhook for the page
+ 5. Subscribe to `messeges` & `messaging_postbacks` webhook for the page
  6. Add callbacks where you need to provide your application url(`use ngrok if you using locally`) and generated token
  7. Once successful you are ready to make message to the page
 
-## How to send and recive message
+## How to send and receive message
  1. Go to your facebook account chat box and send `hi` or `hello` or `hey` to the page you have added to the bot
  2. You will get response (may take little while if running locally) and then type help to get help
  3. Send list <currency> to search top 5 coins maching.
